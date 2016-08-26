@@ -23,7 +23,7 @@ And:
 
 	C:\DEV\msys64\usr\bin\bash.exe
 
-I also have an older Git installed with cmder (`2.6.1.windows.1`).
+I also have an older Git installed with [cmder](http://cmder.net/) (`2.6.1.windows.1`).
 
 ### TortoiseGit
 
@@ -160,8 +160,8 @@ Same thing as `git subrepo` with no argument.
 
 ### git subrepo --help
 
-λ git subrepo --help
-Launching default browser to display HTML ...
-fatal: failed to launch browser for C:\DEV\Git\mingw64/share/doc/git-doc/git-subrepo.html
+	λ git subrepo --help
+	Launching default browser to display HTML ...
+	fatal: failed to launch browser for C:\DEV\Git\mingw64/share/doc/git-doc/git-subrepo.html
 
-**Error**: for documentation, we'll have to stick to github. Or try compiling the man pages.
+I suppose that for documentation, we'll have to stick to [github](https://github.com/ingydotnet/git-subrepo/wiki). Or try compiling the man pages and display them in Windows...
