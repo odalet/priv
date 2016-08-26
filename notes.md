@@ -125,6 +125,8 @@ Adapting to `git subrepo` should just have been a matter of adding by hand the `
 	λ git subrepo
 	C:\DEV\git-subrepo\lib/git-subrepo.d/bash+.bash: line 1: ../../ext/bashplus/lib/bash+.bash: No such file or directory
 
+I suppose this has something to do wit Windows vs Unix path separators...
+
 The solution was to create a script in `C:\DEV\Git\extensions` that delegates the job to the real subrepo code.
 
 Therefore, I created `C:\DEV\Git\extensions\git-subrepo` that contains:
