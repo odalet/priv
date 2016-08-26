@@ -167,3 +167,9 @@ Same thing as `git subrepo` with no argument.
 	fatal: failed to launch browser for C:\DEV\Git\mingw64/share/doc/git-doc/git-subrepo.html
 
 I suppose that for documentation, we'll have to stick to [github](https://github.com/ingydotnet/git-subrepo/wiki). Or try compiling the man pages and display them in Windows...
+
+----
+
+**TODO:** 
+
+* Have a look at the way git flow extensions get installed on Windows (by SourceTree or by hand). Maybe this would solve the problems with using git subrepo from a CMD prompt.
