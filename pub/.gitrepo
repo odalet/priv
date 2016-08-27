@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:odalet/pub.git
+	branch = master
+	commit = df5aff20c4f1dcfd801f5ddc027e9586eb02e0a3
+	parent = c3f382731784496cf4559e3e19253eaaa7cf1926
+	cmdver = 0.3.0
