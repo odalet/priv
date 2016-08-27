@@ -172,6 +172,12 @@ I suppose that for documentation, we'll have to stick to [github](https://github
 
 Tab completion works in MINGW (because it is a Linux-like shell) but not in CMD.
 
+## Exercising git subrepo
+
+	> cd ...\priv
+	> md pub
+	> git subrepo clone 
+
 ----
 
 **TODO:** 
