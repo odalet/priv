@@ -168,6 +168,10 @@ Same thing as `git subrepo` with no argument.
 
 I suppose that for documentation, we'll have to stick to [github](https://github.com/ingydotnet/git-subrepo/wiki). Or try compiling the man pages and display them in Windows...
 
+### git subrepo + TAB
+
+Tab completion works in MINGW (because it is a Linux-like shell) but not in CMD.
+
 ----
 
 **TODO:** 
