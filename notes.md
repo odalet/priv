@@ -1,4 +1,4 @@
-# TESTS 
+# NOTES 
 
 ## Git installs
 
@@ -178,8 +178,18 @@ Tab completion works in MINGW (because it is a Linux-like shell) but not in CMD.
 	> md pub
 	> git subrepo clone 
 
-----
 
-**TODO:** 
+## Branching
 
 * Have a look at the way git flow extensions get installed on Windows (by SourceTree or by hand). Maybe this would solve the problems with using git subrepo from a CMD prompt.
+* Working with branches: See these question: 
+	* [https://github.com/ingydotnet/git-subrepo/issues/197](https://github.com/ingydotnet/git-subrepo/issues/197)
+	* [https://github.com/ingydotnet/git-subrepo/issues/184](https://github.com/ingydotnet/git-subrepo/issues/184)
+	* [https://github.com/ingydotnet/git-subrepo/issues/179](https://github.com/ingydotnet/git-subrepo/issues/179)
+	* [https://github.com/ingydotnet/git-subrepo/issues/177](https://github.com/ingydotnet/git-subrepo/issues/177)
+* Branches discussion:	
+	* The bottom line seems to be that the `priv` repo should always track a special branch of `pub` dedicated to publishing its state to other repos (let's say `pub` has a `publish` branch that would be pulled in all branches of `priv`). That's for pulling
+	* As for pushing back to `pub`, pushing from `priv`'s subrepoto a specific `pub` branch created at the time of the push seems also desirable (let's say this -temporary - branch would be called `integration` on `pub`).   
+	* Switching branches of a subrepo does not really exist. Instead, the subrepo should be cloned again (from the desired branch). A way to re-clone without being told the sub-directory is not empty is to force it: `git subrepo clone -f ...`; though that would probably not clean the directory. We'd better prepend a `git subrepo clean` before it (See issue #184)
+	* Issue #179 explains how to use `-b new_branch` when pushing a subrepo so that it pushes the changes to a `new_branch` in the subrepo's upstream repository.
+	* And issue #177 explains how `-b remote_branch` allows to pull changes from the a specific branch of the subrepo's upstream repository. Adding `-u` makes this remote branch the new default (ie. the remote tracking branch for this subrepo). This switch prevents from directly modifying `.subrepo`.
