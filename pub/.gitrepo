@@ -6,6 +6,6 @@
 [subrepo]
 	remote = git@github.com:odalet/pub.git
 	branch = master
-	commit = df5aff20c4f1dcfd801f5ddc027e9586eb02e0a3
-	parent = c3f382731784496cf4559e3e19253eaaa7cf1926
+	commit = 78b54f3cd7e636686689aed8bc2f9dc549fbdfa8
+	parent = d1acf8d81aa62f7b0d02355eadc0e425910c779e
 	cmdver = 0.3.0
